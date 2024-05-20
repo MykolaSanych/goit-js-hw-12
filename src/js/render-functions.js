@@ -32,11 +32,4 @@ export function render(arreyFoto) {
     );
   }, '');
   listFoto.insertAdjacentHTML('beforeend', gallery);
-  const galleryItem = document.querySelector('.gallery-item');
-  const haightItem = galleryItem.getBoundingClientRect().height * 2;
-  window.scrollBy({
-    top: haightItem,
-    left: 0,
-    behavior: 'smooth',
-  });
 }
